@@ -307,10 +307,12 @@ public class Game {
             }
 
             if(counter1 == SIZE - 1) {
-                return current1;
+                if(map[current1[0]][current1[1]] == DOT_EMPTY)
+                    return current1;
             }
             if(counter2 == SIZE - 1) {
-                return current2;
+                if(map[current2[0]][current2[1]] == DOT_EMPTY)
+                    return current2;
             }
             counter1 = 0;
             counter2 = 0;
