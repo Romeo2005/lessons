@@ -10,7 +10,7 @@ public class Task_2 {
         System.out.println(Arrays.toString(array));
         System.out.println(sumPartsTask6(array));
         findMaxMinTask5(array);
-        diagonalTask4(25);
+        diagonalTask4(4);
     }
 
     public static void shiftArrTask7(int[] arr, int n){
