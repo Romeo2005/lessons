@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
-    public static final int SIZE = 4;
+    public static final int SIZE = 3;
     public static final int DOTS_TO_WIN = 3;
     public static final char DOT_EMPTY = '*';
     public static final char DOT_HUMAN = 'X';
@@ -168,16 +168,6 @@ public class Game {
     }
 
     public static boolean checkWin(char symbol) {
-/*        if(map[0][0] == symb && map[0][1] == symb && map[0][2] == symb) return true;
-        if(map[1][0] == symb && map[1][1] == symb && map[1][2] == symb) return true;
-        if (map[2][0] == symb && map[2][1] == symb && map[2][2] == symb) return true;
-        if (map[0][0] == symb && map[1][0] == symb && map[2][0] == symb) return true;
-        if (map[0][1] == symb && map[1][1] == symb && map[2][1] == symb) return true;
-        if (map[0][2] == symb && map[1][2] == symb && map[2][2] == symb) return true;
-        if (map[0][0] == symb && map[1][1] == symb && map[2][2] == symb) return true;
-        if (map[2][0] == symb && map[1][1] == symb && map[0][2] == symb) return true;*/
-
-
         return checkDiagonals(symbol)||checkVerticals(symbol);
     }
 
