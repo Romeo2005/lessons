@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+    /**Программа для кодировки текста в изображение*/
 
     @Override
     public void start(Stage primaryStage) throws Exception{
