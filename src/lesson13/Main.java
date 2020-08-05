@@ -29,6 +29,8 @@ public class Main {
 
         new newThread(array1);
         fillWithNewValue(array2);
+        System.arraycopy(array1, 0, array, 0, array1.length - 1);
+        System.arraycopy(array2, 0, array, array1.length - 1, array2.length - 1);
         time2 = System.currentTimeMillis();
         return time2 - time1;
     }
