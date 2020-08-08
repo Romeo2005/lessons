@@ -70,7 +70,7 @@ public class Client {
             }
         }
         System.out.println("Connected to " + socket.getInetAddress() + "\n***************************************\n");
-        input = new ObjectInputStream(socket.getInputStream());
         output = new ObjectOutputStream(socket.getOutputStream());
+        input = new ObjectInputStream(socket.getInputStream());
     }
 }
