@@ -328,7 +328,7 @@ public class Controller {
         }
     }
 
-    private static File saveAs() throws FileNotFoundException {
+    private static File saveAs() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Saving dialog");
         fileChooser.getExtensionFilters().add(
