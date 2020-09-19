@@ -25,7 +25,7 @@ public class AuthorisationController {
     private boolean timeOut = false;
 
     private final Thread timeThread = new Thread(() -> {
-        final int TIMEOUT_TIME = 10000;
+        final int TIMEOUT_TIME = 120000;
         long time = System.currentTimeMillis();
         while (true) {
             if (System.currentTimeMillis() - time >= TIMEOUT_TIME) {
